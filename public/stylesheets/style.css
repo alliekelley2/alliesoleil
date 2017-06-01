@@ -1,8 +1,38 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 a {
   color: #00B7FF;
+}
+.hero {
+  color: black;
+
+}
+.header{
+  color: lightskyblue;
+
+}
+.navigation{
+  overflow: hidden;
+}
+.navigation a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+img{
+  image-rendering: auto;
+  image-rendering: crisp edges;
+  image-rendering: pixelated;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
