@@ -11,7 +11,7 @@ a {
 
 }
 .header{
-  color: lightskyblue;
+  color: cornflowerblue;
 
 }
 .navigation{
@@ -35,4 +35,11 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.travelingHeader{
+  color: lemonchiffon;
+}
+.aboutHeader{
+  text-align: center;
+  color: lemonchiffon;
 }
