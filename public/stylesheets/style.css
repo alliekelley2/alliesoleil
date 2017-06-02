@@ -6,11 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
-.hero {
-  color: black;
-
-}
-.header{
+.hero{
   color: cornflowerblue;
 
 }
@@ -27,9 +23,7 @@ a {
   font-size: 17px;
 }
 img{
-  image-rendering: auto;
-  image-rendering: crisp edges;
-  image-rendering: pixelated;
+  float: right;
 }
 ul{
   list-style-type: none;
