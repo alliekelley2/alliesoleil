@@ -59,4 +59,6 @@ typings/
 
 .idea
 
-.DS_Store
+*.DS_Store
+.gitIgnore
+
