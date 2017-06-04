@@ -8,7 +8,26 @@ a {
 }
 .hero{
   color: cornflowerblue;
+  background-image: url("../images/IMG_3002.JPG");
+  background-repeat: no-repeat;
+  height: 300px;
+  color: yellow;
+  background-size: 955px;
+}
+#page{
+  width: 960px;
+  margin: auto;
+}
+ul.banner{
+  width: 100%;
 
+}
+ul.banner li{
+  float: left;
+  padding: 5px;
+}
+ul.banner li img{
+  width: 470px;
 }
 .navigation{
   overflow: hidden;
@@ -22,9 +41,11 @@ a {
   text-decoration: none;
   font-size: 17px;
 }
-img{
+/*img{
   float: right;
+  padding: 10px;
 }
+*/
 ul{
   list-style-type: none;
   margin: 0;
