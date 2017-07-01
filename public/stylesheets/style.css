@@ -29,6 +29,16 @@ ul.banner li{
 ul.banner li img{
   width: 470px;
 }
+ul.friendspics{
+  width: 100%;
+}
+ul.friendspics li{
+  float: left;
+  padding: 5px;
+}
+ul.friendspics li img{
+  width: 470px;
+}
 .navigation{
   overflow: hidden;
 }
