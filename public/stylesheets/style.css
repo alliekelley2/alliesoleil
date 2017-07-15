@@ -1,17 +1,16 @@
 body {
   padding: 0px;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: Montserrat, Verdana, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
 .hero{
-  color: cornflowerblue;
   background-image: url("../images/IMG_3002.JPG");
   background-repeat: no-repeat;
   height: 300px;
-  color: yellow;
+  color: #ffedab;
   background-size: 955px;
 }
 #page{
@@ -20,7 +19,6 @@ a {
 }
 ul.banner{
   width: 100%;
-
 }
 ul.banner li{
   float: left;
@@ -29,15 +27,25 @@ ul.banner li{
 ul.banner li img{
   width: 470px;
 }
-ul.friendspics{
+ul.carousel{
   width: 100%;
 }
-ul.friendspics li{
+ul.carousel li{
   float: left;
   padding: 5px;
 }
-ul.friendspics li img{
+ul.carousel li img{
   width: 470px;
+}
+ul.travelingPics{
+  width: 100%;
+}
+ul.travelingPics li{
+  float: left;
+  padding: 5px;
+}
+ul.travelingPics li img{
+  width: 450px;
 }
 .navigation{
   overflow: hidden;
@@ -49,7 +57,8 @@ ul.friendspics li img{
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
+  font-family: Montserrat, Verdana, sans-serif;
 }
 /*img{
   float: right;
@@ -61,10 +70,14 @@ ul{
   margin: 0;
   padding: 0;
 }
+
 .travelingHeader{
-  color: lemonchiffon;
+  color: #72a2d6;
 }
 .aboutHeader{
   text-align: center;
-  color: lemonchiffon;
+  color: #72a2d6;
+}
+.friendsHeader{
+  color: #72a2d6;
 }
