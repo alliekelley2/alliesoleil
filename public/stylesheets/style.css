@@ -80,4 +80,13 @@ ul{
 }
 .friendsHeader{
   color: #72a2d6;
+  text-align: center;
 }
+
+
+/* Start slick carousel */
+.slick-slider img{
+  margin: auto;
+}
+
+/* End slick carousel */
