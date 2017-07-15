@@ -81,3 +81,14 @@ ul{
 .friendsHeader{
   color: #72a2d6;
 }
+
+/* Slick carousel */
+.slick-slide img {
+    margin: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: red !important;
+}
+
+/* End Slick carousel */
