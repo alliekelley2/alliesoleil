@@ -89,4 +89,9 @@ ul{
   margin: auto;
 }
 
-/* End slick carousel */
+
+.slick-prev:before, .slick-next:before {
+    color: red !important;
+}
+
+/* End Slick carousel */
