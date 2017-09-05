@@ -23,10 +23,10 @@ ul.banner{
 }
 ul.banner li{
   float: left;
-  padding: 0px;
+  padding: 5px 5px 0 0;
 }
 ul.banner li img{
-  width: 470px;
+  width: 475px;
 }
 
 ul.carousel{
@@ -88,10 +88,14 @@ ul.pics{
 }
 ul.pics li {
   float: left;
-  padding: 0px;
+  padding: 0 0 0 0;
   margin: 0;
+
+  /*
   background-color: yellow;
   border: 1px solid red;
+
+  */
 }
 ul.pics li img {
   width: 230px;
@@ -100,10 +104,6 @@ ul.pics li img {
   border: 0;
 }
 
-ul.pics {
-  padding: 0;
-  margin: 0;
-}
 /*ul.horizontal {
   width: 100%
 }*
@@ -150,4 +150,6 @@ h3{
 h1{
   font-weight: 500;
 }
+
+
 
