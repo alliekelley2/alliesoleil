@@ -111,6 +111,7 @@ ul.pics li img {
     margin: 0;
     border: 0;
     line-height: 0;
+    vertical-align: bottom;
 }
 
 /*ul.horizontal {
