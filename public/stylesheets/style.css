@@ -19,7 +19,11 @@ a {
 #page {
     width: 960px;
     margin: auto;
-    line-height: 0;
+}
+
+#page section.traveling {
+    float: left;
+
 }
 
 ul.banner {
@@ -65,6 +69,11 @@ ul.carousel li img {
     font-family: Montserrat, Verdana, sans-serif;
 }
 
+h1 {
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 10px;
+}
 /* End Nav */
 /*img{
   float: right;
@@ -73,8 +82,6 @@ ul.carousel li img {
 */
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* Headers for all pages except home*/
@@ -95,8 +102,6 @@ ul.pics {
 
 ul.pics li {
     float: left;
-    padding: 0 0 0 0;
-    margin: 0;
 
     /*
     background-color: yellow;
@@ -107,11 +112,8 @@ ul.pics li {
 
 ul.pics li img {
     width: 230px;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    line-height: 0;
     vertical-align: bottom;
+    padding: 2px 2px 0 0;
 }
 
 /*ul.horizontal {
@@ -156,9 +158,7 @@ h3 {
 
 /* End Slick carousel */
 
-h1 {
-    font-weight: 500;
-}
+
 
 
 
