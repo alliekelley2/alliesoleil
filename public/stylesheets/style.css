@@ -1,19 +1,24 @@
 body {
     padding: 0px;
     font-family: Montserrat, Verdana, sans-serif;
-
 }
 
 a {
     color: #00B7FF;
 }
 
-.hero {
-    background-image: url("../images/IMG_3002.JPG");
-    background-repeat: no-repeat;
-    height: 300px;
-    color: #ffedab;
-    background-size: 955px;
+h1 {
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
 }
 
 #page {
@@ -26,30 +31,7 @@ a {
 
 }
 
-ul.banner {
-    width: 100%;
-}
-
-ul.banner li {
-    float: left;
-    padding: 5px 5px 0 0;
-}
-
-ul.banner li img {
-    width: 475px;
-}
-
-ul.carousel {
-    width: 100%;
-}
-
-ul.carousel li {
-    float: left;
-    padding: 5px;
-}
-
-ul.carousel li img {
-    width: 470px;
+#page section.home {
 }
 
 /* Start nav */
@@ -69,20 +51,7 @@ ul.carousel li img {
     font-family: Montserrat, Verdana, sans-serif;
 }
 
-h1 {
-    font-weight: 500;
-    line-height: normal;
-    padding-left: 10px;
-}
 /* End Nav */
-/*img{
-  float: right;
-  padding: 10px;
-}
-*/
-ul {
-    list-style-type: none;
-}
 
 /* Headers for all pages except home*/
 
@@ -94,7 +63,26 @@ ul {
 
 /* End Headers */
 
-/* Traveling Page */
+.hero {
+    background-image: url("../images/IMG_3002.JPG");
+    background-repeat: no-repeat;
+    height: 300px;
+    color: #ffedab;
+    background-size: 955px;
+}
+
+ul.banner {
+    width: 100%;
+}
+
+ul.banner li {
+    float: left;
+    padding: 0px 0px 0 0;
+}
+
+ul.banner li img {
+    width: 475px;
+}
 
 ul.pics {
     width: 100%;
@@ -102,12 +90,6 @@ ul.pics {
 
 ul.pics li {
     float: left;
-
-    /*
-    background-color: yellow;
-    border: 1px solid red;
-
-    */
 }
 
 ul.pics li img {
@@ -116,26 +98,40 @@ ul.pics li img {
     padding: 2px 2px 0 0;
 }
 
-/*ul.horizontal {
-  width: 100%
-}*
-
-/*ul.horizontal li{
-  float: left;
-  padding: 2.5px;
+/* Vertical Images Class */
+ul.vertical {
+    width: 100%
 }
 
-ul.horizontal li img {
-  width: 129.5px;
-}*/
+ul.vertical li {
+    float: left;
+}
 
-ul.pics li.vert img {
-    border: 0px solid red;
-    width: 129px;
+ul.vertical li img {
+    /* width: 129.5px; */
+    padding: 0 0 0 0;
+    vertical-align: bottom;
 
 }
 
-/* End Traveling Page */
+ul.pics li.vertical img {
+    /* height: 200px; */
+    width: 129.5px;
+}
+/* End Vertical Images Class */
+
+ul.carousel {
+    width: 100%;
+}
+
+ul.carousel li {
+    float: left;
+    padding: 5px;
+}
+
+ul.carousel li img {
+    width: 470px;
+}
 
 /* Start slick carousel */
 .slick-slider img {
@@ -149,10 +145,6 @@ ul.pics li.vert img {
 .carouselCaption {
     text-align: center;
     color: #72a2d6;
-    font-weight: normal;
-}
-
-h3 {
     font-weight: normal;
 }
 
