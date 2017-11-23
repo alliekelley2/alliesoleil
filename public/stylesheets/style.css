@@ -35,7 +35,6 @@ ul {
 }
 
 /* Start nav */
-
 .navigation {
     overflow: hidden;
 }
@@ -50,11 +49,9 @@ ul {
     font-size: 14px;
     font-family: Montserrat, Verdana, sans-serif;
 }
-
 /* End Nav */
 
 /* Headers for all pages except home*/
-
 .header {
     color: #72a2d6;
     text-align: center;
@@ -62,7 +59,6 @@ ul {
 }
 
 /* End Headers */
-
 .hero {
     background-image: url("../images/IMG_3002.JPG");
     background-repeat: no-repeat;
@@ -73,16 +69,18 @@ ul {
 
 ul.banner {
     width: 100%;
-    border: 0px solid red;
+    border: 0 solid red;
     float: left;
     margin: 5px 0;
     padding: 0;
+
 }
 
 ul.banner li {
     float: left;
     padding: 0;
     margin: 0;
+
 }
 
 ul.banner li img {
@@ -93,6 +91,8 @@ ul.banner li img {
 ul.banner li.last {
     padding-left: 5px;
 }
+
+
 
 ul.pics {
     width: 100%;
@@ -125,11 +125,11 @@ ul.vertical li img {
 }
 
 ul.pics li.vertical img {
-   /* width: 110px; */
+    /* width: 110px; */
     width: 129.5px;
 }
-/* End Vertical Images Class */
 
+/* End Vertical Images Class */
 ul.carousel {
     width: 100%;
 }
@@ -157,7 +157,6 @@ ul.carousel li img {
     color: #72a2d6;
     font-weight: normal;
 }
-
 /* End Slick carousel */
 
 
