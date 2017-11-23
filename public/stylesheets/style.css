@@ -75,16 +75,19 @@ ul.banner {
     width: 100%;
     float: left;
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
 }
 
 ul.banner li {
     float: left;
-    padding: 0;
 }
 
 ul.banner li img {
     width: 475px;
+}
+
+ul.banner li.last{
+    padding-left: 5px;
 }
 
 
