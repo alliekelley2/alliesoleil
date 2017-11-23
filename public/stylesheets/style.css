@@ -73,16 +73,21 @@ ul {
 
 ul.banner {
     width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0;
 }
 
 ul.banner li {
     float: left;
-    padding: 0px 0px 0 0;
+    padding: 0;
 }
 
 ul.banner li img {
     width: 475px;
 }
+
+
 
 ul.pics {
     width: 100%;
@@ -115,9 +120,10 @@ ul.vertical li img {
 }
 
 ul.pics li.vertical img {
-   /* width: 110px; */
+    /* width: 110px; */
     width: 129.5px;
 }
+
 /* End Vertical Images Class */
 
 ul.carousel {
