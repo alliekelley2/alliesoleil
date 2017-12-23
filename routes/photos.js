@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
     var data = {
         photoToShow: pic,
         photos: {
-            1: "IMG_31242.JPG"
+            1: "IMG_31242.JPG",
+            2: "IMG_3184.JPG"
         }
     };
     res.render('photos', data);
