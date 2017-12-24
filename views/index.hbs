@@ -5,6 +5,13 @@
     <ul class="banner">
         <li><img src="images/IMG_2999_med.JPG"/></li>
         <li class="last"><img src="images/IMG_3004.JPG"/></li>
+
+        <!-- Iterating over the model -->
+        {{#each pics}}
+            <li {{#if @last}}class="last"{{/if}}>
+                    <a href="photos/{{this.id}}"><img src="/images/{{this.img}}" /></a></li>
+        {{/each}}
+
     </ul>
 </section>
 

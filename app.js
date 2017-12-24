@@ -52,7 +52,7 @@ app.use('/portfolio', portfolio);
 app.use('/about', about);
 app.use('/other', other);
 app.use('/friends', friends);
-app.use('/photos/:id', photos);
+app.use('/photos', photos);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
