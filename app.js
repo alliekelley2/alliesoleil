@@ -13,7 +13,6 @@ var about = require('./routes/about');
 var other = require('./routes/other');
 var friends = require('./routes/friends');
 var photos = require('./routes/photos');
-
 var app = express();
 
 // view engine setup

@@ -159,6 +159,12 @@ ul.carousel li img {
 }
 /* End Slick carousel */
 
+.arrowRight a{
+    display: block;
+    float: right;
+    width: 20px;
+}
+
 
 
 
