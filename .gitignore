@@ -59,3 +59,7 @@ typings/
 
 .DS_Store
 
+.idea
+
+public/js/lib/slick-master/.gitignore
+
