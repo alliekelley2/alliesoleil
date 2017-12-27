@@ -1,7 +1,9 @@
-<div class="arrowRight" id="myArrowRight">
-    <a href="/photos/{{nextPic}}">
-        <img src="../images/arrowsslider.jpg"/>
+<ul class="bigPics">
+    <a href="/photos/{{previousPic}}">
+        <li><img class="arrows" src="../images/arrowLeft.png"/></li>
     </a>
-</div>
-
-<img src="{{photo}}" width="955"/>
+    <li><img src="{{photo}}" width="600"/></li>
+    <a href="/photos/{{nextPic}}">
+        <li><img class="arrows" src="../images/arrowRight.png"/></li>
+    </a>
+</ul>

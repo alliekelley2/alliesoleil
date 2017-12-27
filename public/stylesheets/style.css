@@ -159,11 +159,23 @@ ul.carousel li img {
 }
 /* End Slick carousel */
 
-.arrowRight a{
+ul.bigPics {
+    width: 100%;
+}
+ul.bigPics li img{
+    padding-left: 35px;
+}
+ul.bigPics li {
+    float: left;
+}
+.arrows{
     display: block;
     float: right;
-    width: 20px;
+    width: 80px;
+    padding-top: 170px;
+    pading-left: 5px;
 }
+
 
 
 
