@@ -6,7 +6,8 @@ router.get('/:id', function(req, res, next) {
     //res.send('respond with a resource');
     //res.redirect('/');
 
-    var picId = req.params.id;
+    var picId = Number(req.params.id);
+    var picIndex = picId - 1; // adjust picture Id for the array indes
     const prefix = "../images/img_"; //beginning of the image source of every photo
     var photos = ["31242.jpg", "3184.jpg", "31222.jpg", "31922.jpg", "31772.jpg", "31942.jpg", "4925.jpg",
                     "3489.jpg", "5039.jpg", "4928.jpg", "3275.jpg", "31212.jpg", "3580.jpg", "9026.jpg",
@@ -17,19 +18,39 @@ router.get('/:id', function(req, res, next) {
     var otherPics = ["8518.jpg", "8519.jpg", "8520.jpg", "8517.jpg", "3471.jpg", "3467.jpg", "3481.jpg", "3447.jpg",
                     "3476.jpg", "3480.jpg", "3483.jpg", "3449.jpg", "8899.jpg", "8889.jpg", "8883.jpg"]; //array of photos on other page
 
-    var nextPic = 1;
-    var previousPic = photos.length;
+    var nextPic = 0;
+    var previousPic = photos.length - 1;
 
 
 
-    if (picId < photos.length && picId > 1) {
-        nextPic = Number(picId) + 1;
-        previousPic = Number(picId) - 1;
+    // Set the next pic
+    if (picIndex === 0) {
+        nextPic = 2;  // should be one more than the array index
+    } else if (picIndex >= photos.length - 1) {
+        nextPic = 1;  // The first picture
+    } else {
+        nextPic = picId + 1;
     }
 
+    // Set the previous pic
+    if (picIndex === 0) {
+        previousPic = photos.length;
+    } else if (picIndex > photos.length) {
+        previousPic = photos.length;
+    } else {
+        previousPic = picId - 1;
+    }
+
+    /*if (picId < photos.length && picId >= 1) {
+        nextPic = Number(picId) + 1;
+        previousPic = Number(picId) - 1;
+    }*/
+
+
     var data = {
-        picId: picId,
-        photo: prefix + photos[picId - 1], //concatenate with constant prefix so you don't have to type path each time
+       // picId: picIndex, // now adjusted for the array index
+       // photo: prefix + photos[picId - 1], //concatenate with constant prefix so you don't have to type path each time
+        photo: prefix + photos[picIndex],
         nextPic: nextPic,
         previousPic: previousPic,
         title: "allie soleil"
