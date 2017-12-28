@@ -7,7 +7,7 @@ router.get('/:id', function(req, res, next) {
     //res.redirect('/');
 
     var picId = Number(req.params.id);
-    var picIndex = picId - 1; // adjust picture Id for the array indes
+    var picIndex = picId - 1; // adjust picture Id for the array indexes
     const prefix = "../images/img_"; //beginning of the image source of every photo
     var photos = ["31242.jpg", "3184.jpg", "31222.jpg", "31922.jpg", "31772.jpg", "31942.jpg", "4925.jpg",
                     "3489.jpg", "5039.jpg", "4928.jpg", "3275.jpg", "31212.jpg", "3580.jpg", "9026.jpg",
@@ -20,19 +20,25 @@ router.get('/:id', function(req, res, next) {
 
     var nextPic = 0;
     var previousPic = photos.length - 1;
+    var photo = prefix + photos[picIndex];
 
 
 
-    // Set the next pic
-    if (picIndex === 0) {
+    // Set the next pic and the previous pic
+    if (picIndex === 0 || picIndex < 0 || picIndex > photos.length - 1) {
         nextPic = 2;  // should be one more than the array index
+        previousPic = photos.length;
+        photo = prefix + photos[0]; // set picture to 1st pic in array if user inputs id out of array's bounds
     } else if (picIndex >= photos.length - 1) {
         nextPic = 1;  // The first picture
+    } else if (picIndex > photos.length) {
+        previousPic = photos.length; // the last picture
     } else {
-        nextPic = picId + 1;
+        nextPic = picId + 1; //the next one in array
+        previousPic = picId - 1; //the previous one in array
     }
 
-    // Set the previous pic
+     /*Set the previous pic
     if (picIndex === 0) {
         previousPic = photos.length;
     } else if (picIndex > photos.length) {
@@ -41,7 +47,7 @@ router.get('/:id', function(req, res, next) {
         previousPic = picId - 1;
     }
 
-    /*if (picId < photos.length && picId >= 1) {
+    if (picId < photos.length && picId >= 1) {
         nextPic = Number(picId) + 1;
         previousPic = Number(picId) - 1;
     }*/
@@ -50,7 +56,7 @@ router.get('/:id', function(req, res, next) {
     var data = {
        // picId: picIndex, // now adjusted for the array index
        // photo: prefix + photos[picId - 1], //concatenate with constant prefix so you don't have to type path each time
-        photo: prefix + photos[picIndex],
+        photo: photo,
         nextPic: nextPic,
         previousPic: previousPic,
         title: "allie soleil"
