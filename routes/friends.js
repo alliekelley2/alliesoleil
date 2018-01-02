@@ -7,7 +7,7 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     //res.send('respond with a resource');
-    res.render('friends', {});
+    res.render('friends', {title: "alliesoleil"});
 });
 
 module.exports = router;
