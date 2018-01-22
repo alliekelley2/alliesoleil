@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET photos page. */
-router.get('/:albumId/:id', function(req, res, next) {
+router.get('/:albumId/:id', function (req, res, next) {
     //res.send('respond with a resource');
     //res.redirect('/');
 
@@ -20,16 +20,16 @@ router.get('/:albumId/:id', function(req, res, next) {
             "8991.jpg", "8977.jpg", "9002.jpg", "8988.jpg", "9065.jpg", "9501.jpg", "9272.jpg",
             "9230.jpg", "8699.jpg", "8695.jpg", "8682.jpg", "8681.jpg"],
         other: ["8518.jpg", "8519.jpg", "8520.jpg", "8517.jpg", "3471.jpg", "3467.jpg", "3481.jpg", "3447.jpg",
-            "3476.jpg", "3480.jpg", "3483.jpg", "3449.jpg", "8899.jpg", "8889.jpg", "8883.jpg"],
-        friends: ["7203.jpg", "4102.jpg", "4100.jpg", "3429.jpg", "4105.jpg", "4099.jpg", "4101.jpg",
-                    "4104.jpg", "4086.jpg"]
+            "3476.jpg", "3480.jpg", "3483.jpg", "3449.jpg", "8899.jpg", "8889.jpg", "8883.jpg", "4089.jpg",
+            "4090.jpg", "4092.jpg", "4093.jpg"],
+        friends: ["7203.jpg", "4102.jpg", "4100.jpg", "3429.jpg", "4063.jpg", "4065.jpg", "4050.jpg", "4073.jpg",
+            "4105.jpg", "4099.jpg", "4101.jpg", "4104.jpg", "4086.jpg", "3532.jpg", "3733.jpg", "4087.jpg"]
     }
 
     var album = photos[albumId];
     var nextPic = 0;
     var previousPic = album.length - 1;
     var photo = prefix + album[picIndex];
-
 
 
     // Set the next pic and the previous pic
@@ -39,7 +39,7 @@ router.get('/:albumId/:id', function(req, res, next) {
         photo = prefix + album[0]; // set picture to 1st pic in array if user inputs id out of array's bounds
     } else if (picIndex >= album.length - 1) {
         nextPic = 1;  // The first picture
-    }else if (picIndex > album.length) {
+    } else if (picIndex > album.length) {
         previousPic = album.length; // the last picture
     } else {
         nextPic = picId + 1; //the next one in array
@@ -54,7 +54,6 @@ router.get('/:albumId/:id', function(req, res, next) {
         title: "alliesoleil",
         albumId: albumId
     };
-
 
 
     res.render('photos', data);
